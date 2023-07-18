@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <form action="https://fom.in.ua/echo" method="GET">
+        <label for="brand">Марка авто:</label>
+        <select id="brand" name="brand">
+            <option value="" disabled selected hidden>Оберіть марку авто</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+            <option value="citroen">Citroen</option>
+            <option value="lexus">Lexus</option>
+            <option value="ford">Ford</option>
+        </select>
+        <br>
+
+        <label for="bodyType">Тип кузова:</label>
+        <select id="bodyType" name="bodyType" multiple>
+            <option value="sedan">Седан</option>
+            <option value="suv">Кросовер</option>
+            <option value="hatchback">Хетчбек</option>
+            <option value="coupe">Купе</option>
+            <option value="convertible">Кабріолет</option>
+        </select>
+        <br>
+
+        <label for="country">Країна виробник:</label>
+        <select id="country" name="country">
+            <option value="" disabled selected hidden>Оберіть країну</option>
+            <option value="german">Німечена</option>
+            <option value="britan">Англія</option>
+            <option value="france">Франція</option>
+            <option value="usa">США</option>
+            <option value="italy">Італія</option>
+        </select>
+        <br>
+
+        <label for="priceFrom">Ціна від:</label>
+        <input type="number" id="priceFrom" name="priceFrom">
+        <br>
+
+        <label for="priceTo">Ціна до:</label>
+        <input type="number" id="priceTo" name="priceTo">
+        <br>
+
+        <label for="yearFrom">Рік випуску від:</label>
+        <input type="number" id="yearFrom" name="yearFrom" min="1900" max="2023" value="1900">
+        <br>
+
+        <label for="yearTo">Рік випуску до:</label>
+        <input type="number" id="yearTo" name="yearTo" min="1900" max="2023" value="2023">
+        <br>
+
+        <label for="condition">Стан:</label>
+        <input type="checkbox" id="condition" name="condition" value="broke"> Бита
+        <input type="checkbox" id="condition2" name="condition" value="credit"> У кредиті
+        <input type="checkbox" id="condition3" name="condition" value="dutyFree"> Нерозмитнена
+        <br>
+
+        <label for="fuelType">Тип палива:</label>
+        <select id="fuelType" name="fuelType" multiple>
+            <option value="gas">Бензин</option>
+            <option value="disel">Дізель</option>
+            <option value="hibrid">Гібрид</option>
+            <option value="electro">Електро</option>
+        </select>
+        <br>
+      
+        <label for="transmission">Тип коробки передач:</label>
+        <input type="checkbox" id="transmission" name="transmission" value="auto"> Автомат
+        <input type="checkbox" id="transmission2" name="transmission" value="mehanic"> Механічна
+        <input type="checkbox" id="transmission3" name="transmission" value="robot"> Робот
+        <br>
+      
+        <label for="color">Колір:</label>
+        <select id="color" name="color" multiple>
+            <option value="red">Червона</option>
+            <option value="black">Чорна</option>
+            <option value="white">Біла</option>
+        </select>
+        <br>
+      
+        <label for="comfort">Комфорт:</label>
+        <input type="checkbox" id="comfort" name="comfort" value="sunroof"> Люк
+        <input type="checkbox" id="comfort2" name="comfort" value="leatherSeats"> Шкіряний салон
+        <input type="checkbox" id="comfort3" name="comfort" value="conditioner"> Кондіционер
+        <br>
+
+        <label for="place">В Україні</label>
+        <input type="radio" id="place" name="place" value="inUkraine"> Так
+        <input type="radio" id="place2" name="place" value="abroad"> Ні
+        <br>
+
+        <button type="submit">Шукати</button>
+    </form>
+      
+</body>
+</html>
