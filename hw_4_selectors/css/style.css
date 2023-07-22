@@ -1,0 +1,42 @@
+    p {
+        color: blue;
+      }
+
+      #some_id {
+        color: red;
+        font-size: 24px;
+      }
+
+      .some_class {
+        background-color: green;
+        color: white;
+      }
+
+      .some_class.another_class {
+        color: yellow;
+        background-color: transparent;
+      }
+
+      p span {
+        color: aqua;
+      }
+
+      h3 {
+        color: coral;
+      }
+
+      #green_text {
+        color: green;
+      }
+
+      .grey_text {
+        color: gray;
+      }
+
+      p span a {
+        color: gold;
+      }
+
+      footer {
+        color: darkorange;
+      }
